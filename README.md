@@ -1,1 +1,1 @@
-# multimodal-assistive-learning-platform
+#ai-enhanced-assistive-lms
