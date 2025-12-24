@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Account | Learning Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- SAME CSS FILE AS LOGIN -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <!-- LEFT ILLUSTRATION (SAME AS LOGIN PAGE) -->
+    <div class="illustration-section">
+        <img src="https://storyset.com/illustration/coding-workshop/pana.svg" alt="Learning Illustration">
+    </div>
+
+    <!-- RIGHT SIGN-UP CARD -->
+    <div class="login-card">
+        <h1>Welcome!</h1>
+        <p class="subtitle">Sign up to learn</p>
+
+        <form id="signupForm">
+
+            <div class="form-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="John Doe" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <i class="fas fa-eye" id="togglePassword"></i>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Role</label>
+                <div class="role-selector">
+                    <button type="button" class="role-btn active" data-role="Lecturer">Teacher</button>
+                    <button type="button" class="role-btn" data-role="Student">Student</button>
+                </div>
+                <input type="hidden" id="role" value="Lecturer">
+            </div>
+
+            <button type="submit" class="login-button">Sign Up</button>
+
+            <p class="signup-text">
+                Already have an account?
+                <a href="index.html">Log in</a>
+            </p>
+
+        </form>
+    </div>
+
+</div>
+
+<script src="signup.js"></script>
+</body>
+</html>
